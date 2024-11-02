@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0a0068;
+    color: #dbdbdb;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    background-color: #0678fa;
+    color: white;
+    padding: 10px;
+    position: sticky;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #bebebe;
+    font-weight: bold;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #0d0085;
+    color: white
+    font-size: 3em
+}
+
+.background{
+    width: 100%; 
+    height: 700px; 
+    background-image: url("images/oceania.jpg"); 
+    background-position: center;
+    color: white; /
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+
+.circulos {
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: #eeea0c;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2600fc;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    position: relative;
+    text-decoration: none;
+}
+
+.circulo:hover {
+    opacity: 0.5; 
+}
+
+.container2{
+    display: grid;
+            grid-template-areas:
+                'header header'
+                'nav main'
+                'footer footer';
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+            height: 100vh; 
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #000222;
+    color: white;
+}
